@@ -731,9 +731,9 @@ img{max-width:100%;display:block}
 }
 .theme-tile{
   background:var(--card);border:1px solid var(--border);
-  border-radius:8px;padding:1.3rem .85rem;
+  border-radius:8px;padding:1rem .85rem;min-height:78px;
   text-align:center;
-  display:flex;flex-direction:column;align-items:center;gap:.6rem;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;
   font-family:var(--fd);font-size:.65rem;font-weight:700;
   color:var(--text);letter-spacing:.04em;
   clip-path:polygon(8% 0%,92% 0%,100% 8%,100% 92%,92% 100%,8% 100%,0% 92%,0% 8%);
@@ -1152,4 +1152,128 @@ img{max-width:100%;display:block}
     opacity:.27;
   }
   .hero::after{right:-26%;top:16%;width:320px;height:320px}
+}
+
+/* Real space photography and overflow-safe hero content. */
+.hero{
+  min-height:100svh;
+  justify-content:safe center;
+  padding:7.5rem 1.25rem 5rem;
+  background-color:#020806;
+  background-image:
+    linear-gradient(rgba(1,8,5,.3),rgba(1,8,5,.52)),
+    url("WhatsApp%20Image%202026-10-07%20at%208.13.52%20PM.jpeg");
+  background-size:cover;
+  background-position:center;
+  box-shadow:none;
+  animation:hero-background-drift 36s ease-in-out infinite alternate;
+}
+.hero::before,.hero::after,.hero-content::before{content:none}
+.hero-art,.ss-layer,#ben10-bg,body::before,body::after{display:none}
+.hero-content{margin-left:0;gap:.85rem}
+.deadline{
+  position:static;
+  float:none;
+  display:block;
+  flex:none;
+  margin:0;
+  transform:none;
+}
+.hc-icon,.j-icon{
+  font-family:var(--fd);
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  color:var(--green);
+}
+.p-medal{
+  font-family:var(--fd);
+  color:var(--amber);
+}
+@media(max-width:640px){
+  .hero{min-height:100svh;padding:6.5rem 1rem 4.5rem}
+  .hero-content{margin-left:0}
+}
+
+.scroll-hint{
+  position:static;
+  left:auto;
+  bottom:auto;
+  transform:none;
+  margin-top:.15rem;
+  animation:none;
+}
+
+body::before{
+  content:"";
+  display:block;
+  position:fixed;
+  inset:0;
+  z-index:0;
+  width:auto;
+  height:auto;
+  border-radius:0;
+  filter:none;
+  opacity:.28;
+  pointer-events:none;
+  background-image:
+    radial-gradient(1px 1px at 24px 36px,rgba(208,255,218,.9) 98%,transparent),
+    radial-gradient(1.5px 1.5px at 135px 80px,rgba(132,217,242,.7) 98%,transparent),
+    radial-gradient(1px 1px at 72px 166px,rgba(216,239,122,.65) 98%,transparent);
+  background-size:210px 190px,300px 270px,360px 320px;
+  animation:starfield-drift 75s linear infinite;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  opacity:.48;
+  background-image:
+    linear-gradient(180deg,transparent 42%,rgba(98,217,141,.14) 49%,rgba(98,217,141,.04) 51%,transparent 58%),
+    radial-gradient(1px 1px at 24px 36px,rgba(230,255,232,.85) 98%,transparent),
+    radial-gradient(1.5px 1.5px at 135px 80px,rgba(132,217,242,.7) 98%,transparent),
+    radial-gradient(1px 1px at 72px 166px,rgba(216,239,122,.65) 98%,transparent);
+  background-size:100% 220%,210px 190px,300px 270px,360px 320px;
+  background-position:0 -220%,0 0,0 0,0 0;
+  animation:hero-space-motion 32s linear infinite;
+}
+@keyframes hero-background-drift{
+  from{background-position:center,48% 46%}
+  to{background-position:center,52% 54%}
+}
+@keyframes hero-space-motion{
+  to{background-position:0 220%,210px 190px,-300px 270px,360px -320px}
+}
+@keyframes starfield-drift{
+  to{background-position:210px 190px,-300px 270px,360px -320px}
+}
+body::after{
+  content:"";
+  display:block;
+  position:fixed;
+  inset:0;
+  z-index:0;
+  width:auto;
+  height:auto;
+  border-radius:0;
+  filter:none;
+  opacity:.18;
+  pointer-events:none;
+  background:linear-gradient(180deg,transparent 0%,rgba(98,217,141,.12) 50%,transparent 100%);
+  background-size:100% 220%;
+  background-position:0 -220%;
+  animation:section-scan 28s linear infinite;
+}
+@keyframes section-scan{
+  to{background-position:0 220%}
+}
+.navbar::before{
+  background-size:220% 100%;
+  animation:nav-glint 8s ease-in-out infinite;
+}
+@keyframes nav-glint{
+  0%{background-position:120% 0}
+  100%{background-position:-120% 0}
 }

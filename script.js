@@ -476,7 +476,7 @@ const noMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (diff <= 0) {
       d.textContent=h.textContent=m.textContent=s.textContent='00';
       const lbl = document.querySelector('.cd-label');
-      if (lbl) lbl.textContent='🔴 SpaceOut is LIVE!'; return;
+      if (lbl) lbl.textContent='SpaceOut is LIVE!'; return;
     }
     d.textContent = pad(Math.floor(diff/86400000));
     h.textContent = pad(Math.floor(diff/3600000)%24);
