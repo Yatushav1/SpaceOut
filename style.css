@@ -1161,7 +1161,7 @@ img{max-width:100%;display:block}
   padding:7.5rem 1.25rem 5rem;
   background-color:#020806;
   background-image:
-    linear-gradient(rgba(1,8,5,.3),rgba(1,8,5,.52)),
+    linear-gradient(rgba(1,8,5,.5),rgba(1,8,5,.66)),
     url("WhatsApp%20Image%202026-10-07%20at%208.13.52%20PM.jpeg");
   background-size:cover;
   background-position:center;
@@ -1171,6 +1171,16 @@ img{max-width:100%;display:block}
 .hero::before,.hero::after,.hero-content::before{content:none}
 .hero-art,.ss-layer,#ben10-bg,body::before,body::after{display:none}
 .hero-content{margin-left:0;gap:.85rem}
+.hero .hero-tag,
+.hero .deadline,
+.hero .meta-chip,
+.hero .cd-label,
+.hero .cd-lbl,
+.hero .scroll-hint{
+  color:#f3fff6;
+  text-shadow:0 1px 8px rgba(0,0,0,.8);
+}
+.hero .deadline strong{color:#f1ff8b}
 .deadline{
   position:static;
   float:none;
