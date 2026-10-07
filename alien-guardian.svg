@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 960" fill="none">
+  <defs>
+    <linearGradient id="armor" x1="180" y1="90" x2="480" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#202722"/>
+      <stop offset=".48" stop-color="#101612"/>
+      <stop offset="1" stop-color="#060907"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="160" y1="170" x2="510" y2="790" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#bdc9bf" stop-opacity=".66"/>
+      <stop offset=".55" stop-color="#718477" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#303b33" stop-opacity=".16"/>
+    </linearGradient>
+    <linearGradient id="visor" x1="264" y1="184" x2="386" y2="217" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c0e8ce"/>
+      <stop offset=".5" stop-color="#79bb91"/>
+      <stop offset="1" stop-color="#3e7654"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientTransform="matrix(0 62 -62 0 321 423)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a6d7b5" stop-opacity=".72"/>
+      <stop offset=".32" stop-color="#467a59" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#0a110d" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="0" y="0" width="640" height="960" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+
+  <path d="M274 112 226 47l82 35 23-47 31 48 73-36-39 75 24 47-33 79-63 34-67-29-38-74 25-67Z" fill="url(#armor)" stroke="url(#edge)" stroke-width="5"/>
+  <path d="m261 179 40-15 20 8 20-8 42 15-12 44-48 30-49-29-13-45Z" fill="#080e0b" stroke="#628b70" stroke-opacity=".55" stroke-width="3"/>
+  <path d="m267 183 43 9-17 20-30-7 4-22Zm105 0-43 9 17 20 30-7-4-22Z" fill="url(#visor)"/>
+  <path d="m258 139-36-28 15 70 27 20m122-62 40-28-18 70-27 20" stroke="#71977b" stroke-opacity=".65" stroke-width="8" stroke-linecap="round"/>
+  <path d="m295 257 51 2 28 47-17 39h-75l-16-40 29-48Z" fill="url(#armor)" stroke="url(#edge)" stroke-width="4"/>
+
+  <path d="m281 291-87-20-55 35-28 128 37 112 61-18 28-102 71-50-27-85Z" fill="url(#armor)" stroke="url(#edge)" stroke-width="5" stroke-linejoin="round"/>
+  <path d="m358 290 88-19 58 38 28 125-38 110-62-17-27-101-72-50 25-86Z" fill="url(#armor)" stroke="url(#edge)" stroke-width="5" stroke-linejoin="round"/>
+  <path d="m139 418-25 113 22 92 55-19 20-72-25-100-47-14Zm365 0 25 113-23 92-54-19-21-72 26-100 47-14Z" fill="#0a110d" stroke="#587a62" stroke-opacity=".64" stroke-width="4" stroke-linejoin="round"/>
+
+  <path d="m272 306 49-15 49 15 47 79-31 147-66 44-66-44-30-147 48-79Z" fill="url(#armor)" stroke="url(#edge)" stroke-width="5" stroke-linejoin="round"/>
+  <path d="m321 321 24 50-24 43-24-43 24-50Z" fill="#7dae89" fill-opacity=".36" stroke="#9ccaaa" stroke-opacity=".65" stroke-width="3"/>
+  <path d="m321 414 34 31-34 41-34-41 34-31Z" fill="url(#core)"/>
+  <path d="m321 421 15 21-15 22-15-22 15-21Z" fill="#a2d2b0" fill-opacity=".76"/>
+  <path d="m267 370-30 89 46 26m92-115 30 89-46 26M276 507l45 31 45-31" stroke="#71977b" stroke-opacity=".54" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="m265 552 56 14 55-14 40 81-29 177-66 45-68-45-29-177 41-81Z" fill="url(#armor)" stroke="url(#edge)" stroke-width="5" stroke-linejoin="round"/>
+  <path d="m270 595 51 17 51-17-12 63-39 25-39-25-12-63Zm8 112 43 24 43-24-11 67-32 20-32-20-11-67Z" fill="#111b15" stroke="#587a62" stroke-opacity=".52" stroke-width="3"/>
+
+  <path d="m264 833 57 22 57-22 27 47-12 44-72 14-73-14-12-44 28-47Z" fill="#080d0b" stroke="url(#edge)" stroke-width="5" stroke-linejoin="round"/>
+  <path d="m249 895 72 13 71-13-4 28-67 17-68-17-4-28Z" fill="#17221c" stroke="#60816a" stroke-opacity=".6" stroke-width="3"/>
+
+  <path d="m117 575 73-18 22 56-60 44-37-14-13-68Zm406 0-72-18-23 56 60 44 37-14 13-68Z" fill="#101a14" stroke="#799b82" stroke-opacity=".72" stroke-width="4" stroke-linejoin="round"/>
+  <path d="m137 599 35 27 29-19-13 48-37 11-28-24 14-43Zm366 0-35 27-29-19 13 48 37 11 28-24-14-43Z" fill="#263b2e" fill-opacity=".78"/>
+
+  <path d="m216 291 34 18-26 39-39-9 31-48Zm210 0-34 18 26 39 39-9-31-48Z" fill="#263b2e" stroke="#8eb99a" stroke-opacity=".48" stroke-width="3"/>
+  <path d="m254 340-34 68m166-68 34 68M229 473l-26 66m235-66 26 66M273 558l-17 95m129-95 17 95" stroke="#a6d3b2" stroke-opacity=".3" stroke-width="3" stroke-linecap="round"/>
+  <path d="m321 302v-27m-87 31-17-22m191 22 17-22" stroke="#b0d8bc" stroke-opacity=".45" stroke-width="3" stroke-linecap="round"/>
+
+  <path d="m272 443 49-31 49 31-49 31-49-31Z" fill="#8cb99a" fill-opacity=".35" filter="url(#softGlow)"/>
+</svg>
